@@ -198,6 +198,29 @@
   \field{urlyear}{2011}
 \endentry
 
+\entry{WEB:DESTATIS:2014}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Statistisches Bundesamt Wiesbaden}}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{S1}
+  \strng{fullhash}{S1}
+  \field{labelalpha}{{Sta}11}
+  \field{sortinit}{{S}}
+  \field{title}{7,3 Millionen schwerbehinderte Menschen}
+  \verb{url}
+  \verb https://www.destatis.de/DE/ZahlenFakten/GesellschaftStaat/Gesundheit/Be
+  \verb hinderte/Aktuell.html
+  \endverb
+  \field{year}{2011}
+  \field{urlday}{27}
+  \field{urlmonth}{05}
+  \field{urlyear}{2011}
+\endentry
+
 \lossort
 \endlossort
 
