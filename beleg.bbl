@@ -54,27 +54,6 @@
   \field{year}{1995}
 \endentry
 
-\entry{Kohm:2011}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Kohm}{K.}%
-     {Markus}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Jens-Uwe-Morawski}{J.-U.-M.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KMJUM1}
-  \strng{fullhash}{KMJUM1}
-  \field{labelalpha}{KJUM11}
-  \field{sortinit}{K}
-  \field{title}{KOMA-Script: Die Anleitung}
-  \field{year}{2011}
-\endentry
-
 \entry{Miede:2011}{manual}{}
   \name{author}{1}{}{%
     {{}%
@@ -86,34 +65,10 @@
   \strng{namehash}{MA1}
   \strng{fullhash}{MA1}
   \field{labelalpha}{Mie11}
-  \field{extraalpha}{1}
   \field{sortinit}{M}
   \field{title}{A Classic Thesis Style: An Homage to The Elements of
   Typographic Style}
   \field{year}{2011}
-\endentry
-
-\entry{WEB:Miede:2011}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Miede}{M.}%
-     {Andr{\'e}}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{MA1}
-  \strng{fullhash}{MA1}
-  \field{labelalpha}{Mie11}
-  \field{extraalpha}{2}
-  \field{sortinit}{M}
-  \field{title}{A Classic Thesis Style by Andr{\'e} Miede}
-  \verb{url}
-  \verb http://www.miede.de/index.php?page=classicthesis
-  \endverb
-  \field{year}{2011}
-  \field{urlday}{27}
-  \field{urlmonth}{05}
-  \field{urlyear}{2011}
 \endentry
 
 \entry{Apple:keynote:2010}{book}{}
@@ -130,72 +85,28 @@
   \strng{namehash}{A1}
   \strng{fullhash}{A1}
   \field{labelalpha}{{App}10}
-  \field{extraalpha}{1}
   \field{sortinit}{{A}}
   \field{title}{Keynote '09 User Guide}
   \field{year}{2010}
 \endentry
 
-\entry{Apple:numbers:2010}{book}{}
+\entry{WEB:DIN18040:2010}{online}{}
   \name{author}{1}{}{%
     {{}%
-     {{Apple Inc.}}{A.}%
+     {{HyperJoint GmbH}}{H.}%
      {}{}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {{Apple Inc.}}%
-  }
-  \strng{namehash}{A1}
-  \strng{fullhash}{A1}
-  \field{labelalpha}{{App}10}
-  \field{extraalpha}{2}
-  \field{sortinit}{{A}}
-  \field{title}{Numbers '09 User Guide}
-  \field{year}{2010}
-\endentry
-
-\entry{Apple:pages:2010}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {{Apple Inc.}}{A.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {{Apple Inc.}}%
-  }
-  \strng{namehash}{A1}
-  \strng{fullhash}{A1}
-  \field{labelalpha}{{App}10}
-  \field{extraalpha}{3}
-  \field{sortinit}{{A}}
-  \field{title}{Pages '09 User Guide}
-  \field{year}{2010}
-\endentry
-
-\entry{WEB:GNU:GPL:2010}{online}{}
-  \name{author}{1}{}{%
-    {{}%
-     {{Free Software Foundation, Inc.}}{F.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{F1}
-  \strng{fullhash}{F1}
-  \field{labelalpha}{{Fre}10}
-  \field{sortinit}{{F}}
-  \field{title}{GNU General Public License}
+  \strng{namehash}{H1}
+  \strng{fullhash}{H1}
+  \field{labelalpha}{{Hyp}10}
+  \field{sortinit}{{H}}
+  \field{title}{DIN-18040}
   \verb{url}
-  \verb http://www.gnu.org/licenses/gpl.html
+  \verb http://nullbarriere.de/din18040-1.htm
   \endverb
   \field{year}{2010}
-  \field{urlday}{27}
-  \field{urlmonth}{05}
-  \field{urlyear}{2011}
 \endentry
 
 \entry{WEB:DESTATIS:2014}{online}{}

@@ -4,26 +4,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Zielstellung und Abgrenzung der Arbeit}{1}{section*.5}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen}{2}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Search Engine Optimization}{2}{section*.5}
+\contentsline {section}{\numberline {2.1}Search Engine Optimization}{2}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Search Engine Marketing}{2}{section*.6}
+\contentsline {section}{\numberline {2.2}Search Engine Marketing}{2}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Anbieter}{2}{section*.7}
+\contentsline {section}{\numberline {2.3}Anbieter}{2}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Abrechnungsmodelle}{2}{section*.8}
+\contentsline {section}{\numberline {2.4}Abrechnungsmodelle}{2}{section*.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Entwicklung eines Betrachtungsbeispieles}{3}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Fazit}{4}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}System Section 1}{4}{section*.11}
+\contentsline {section}{\numberline {4.1}System Section 1}{4}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}System Section 2}{4}{section*.12}
+\contentsline {section}{\numberline {4.2}System Section 2}{4}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Ausblick}{4}{section*.13}
+\contentsline {section}{\numberline {4.3}Ausblick}{4}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{5}{section*.15}
+\contentsline {chapter}{\nonumberline Literatur}{5}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Abk\IeC {\"u}rzungsverzeichnis}{8}{chapter.5}
