@@ -132,6 +132,29 @@
   \field{year}{2010}
 \endentry
 
+\entry{WEB:SYNCML:2014}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Open Mobile Alliance}}{O.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{O1}
+  \strng{fullhash}{O1}
+  \field{labelalpha}{{Ope}13}
+  \field{sortinit}{{O}}
+  \field{title}{SyncML Spezifikationen}
+  \verb{url}
+  \verb http://technical.openmobilealliance.org/Technical/release_program/SyncM
+  \verb L_v1_2_2.aspx
+  \endverb
+  \field{year}{2013}
+  \field{urlday}{03}
+  \field{urlmonth}{05}
+  \field{urlyear}{2014}
+\endentry
+
 \entry{WEB:DESTATIS:2014}{online}{}
   \name{author}{1}{}{%
     {{}%
@@ -153,6 +176,28 @@
   \field{urlday}{27}
   \field{urlmonth}{05}
   \field{urlyear}{2011}
+\endentry
+
+\entry{WEB:WEBSQLSYNC:2014}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{orbitaloop}}{o.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{o1}
+  \strng{fullhash}{o1}
+  \field{labelalpha}{{orb}13}
+  \field{sortinit}{{o}}
+  \field{title}{WebSqlSync}
+  \verb{url}
+  \verb http://www.verious.com/code/orbitaloop/WebSqlSync/
+  \endverb
+  \field{year}{2013}
+  \field{urlday}{03}
+  \field{urlmonth}{05}
+  \field{urlyear}{2014}
 \endentry
 
 \lossort

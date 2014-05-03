@@ -1,0 +1,37 @@
+% !TEX root = ../thesis-example.tex
+%
+\chapter{Synchronisation}
+\label{sec:Synchronisation}
+
+\cleanchapterquote{The most important property of a program is whether it accomplishes the intention of its user.}{C.A.R. Hoare}{(British computer scientist, winner of the 1980 Turing Award)}
+
+Synchronisation beschreibt den Datenaustausch zwischen einem Sender und einem Empfänger. Dabei werden die Daten in Blöcke aufgeteilt und in einen Übertragungsrahmen eingepasst. Um die Daten aneinander anzugleichen muss dabei festgestellt werden, welches Endgerät welche Daten besitzt und kontrolliert ob das andere Gerät diese Daten zu seinen besitzen will.
+
+Besitzen beide Endgeräte dieselben Daten, z.B. in unterschiedlichen Versionen, kann definiert werden, wie mit den Änderungen umgegangen wird.\cite[]{WEB:SYNCML:2014}
+
+\section{WebSqlSync}
+\label{sec:websqlsync}
+
+WebSqlSync ist eine Javascript Bibliothek zur automatischen Synchronisation einer lokalen WebSql Datenbank mit dem Server. Die Synchronisation kann dabei in beide Richtungen erfolgen und arbeitet auf dem Prinzip der inkrementellen Synchronisation, was bedeutet dass nur erforderliche Daten übertragen werden.
+
+WebSqlSync funktioniert auch ohne Internetverbindung. Alle Änderungen der Daten werden dabei verfolgt und mit dem Server abgeglichen, sobald wieder eine Internetverbindung besteht. Es wird auch die Änderung auf mehreren Geräten unterstützt.
+
+Die Unterstützung von webapp und der phonegap app für mobile Betriebssysteme wie z.B. iOS und Android ermöglicht eine einfache Integration ohne den Programmcode anpassen zu müssen.\cite[]{WEB:WEBSQLSYNC:2014}
+
+\cleardoublepage
+
+\subsection{Installation und Initialisierung}
+\label{sec:installation}
+
+Um WebSqlSync nutzen zu können, muss nur die Datei webSqlSync.js im \ac{HTML} des Projekts hinzugefügt werden.
+
+\lstset{language=html}
+\lstinline$<script src="lib/webSqlSync.js" type="application/x-javascript" charset="utf-8"></script>$
+
+
+
+\section{persistence.js}
+\label{sec:persistence}
+
+\section{QuickConnectFamily DBSync}
+\label{sec:quickconnect}
