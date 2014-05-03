@@ -3,7 +3,7 @@
 \chapter{Theorie/Begriffsbestimmung}
 \label{sec:theorie:Theorie}
 
-\cleanchapterquote{You can’t do better design with a computer, but you can speed up your work enormously.}{Wim Crouwel}{(Graphic designer and typographer)}
+\cleanchapterquote{Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.}{Linus Torvalds}{(Finnish American, software engineer and hacker)}
 
 Um das allgemeine Verständnis zu gewährleisten müssen noch einige wichtige Begriffe geklärt werden, die die Grundlage für die folgende Untersuchung bilden.
 
@@ -23,7 +23,7 @@ Dadurch stellt man eine optimale Nutzung der Ressourcen und einheitlich funktion
 
 	\item Native Apps nutzen die Leistung des Betriebssystems und des verwendeten Gerätes voll aus, da sie speziell für das Betriebssystem angepasst sind. Dadurch lassen sich sehr gut komplexere und rechenintensivere Apps umsetzen.\cite[]{WEB:APPEV:2014}
 
-	\item Durch die Installation der Apps auf dem Endgerät, können Hardwarefunktionen wie Kamera, Beschleunigungssensor oder GPS benutzt werden. Das ist in der Regel nur nativen Apps vorbehalten.\cite[]{WEB:APPEV:2014}
+	\item Durch die Installation der Apps auf dem Endgerät, können Hardwarefunktionen wie Kamera, Beschleunigungssensor oder \ac{GPS} benutzt werden. Das ist in der Regel nur nativen Apps vorbehalten.\cite[]{WEB:APPEV:2014}
 
 	\item Daten können auf dem Endgerät in beliebiger Menge gespeichert werden.\cite[]{WEB:APPEV:2014}
 
@@ -49,7 +49,7 @@ Dadurch stellt man eine optimale Nutzung der Ressourcen und einheitlich funktion
 \section{Webapps}
 \label{sec:intro:webapp}
 
-Die sogenannten Webapps sind im eigentlichen Sinne speziell programmierte HTML5 Websites, die erkennen auf welchem Endgerät sie aufgerufen werden und optimieren den Inhalt entsprechend. Somit kann quasi jedes mobile Endgerät, dass über einen Webbrowser verfügt, die App nutzen.
+Die sogenannten Webapps sind im eigentlichen Sinne speziell programmierte \ac{HTML5} Websites, die erkennen auf welchem Endgerät sie aufgerufen werden und optimieren den Inhalt entsprechend. Somit kann quasi jedes mobile Endgerät, dass über einen Webbrowser verfügt, die App nutzen.
 
 \subsection{Vorteile}
 \label{sec:webapp:pros}
@@ -122,3 +122,30 @@ Für Einige mag die Entwicklung einer Hybridapp als \"Allheilmittel\" klingen, j
 
 \section{Wahl der Appvariante}
 \label{sec:intro:Appvariante}
+
+Die Wahl der Appvariante ist nicht allein abhängig von den Vor- und Nachteilen der Varianten. Hierfür muss man auch die bestehende Website betrachten und die Umsetzungsaufwände gegeneinander abwägen.
+
+Ein nicht zu unterschätzender Vorteil der Website ist die bereits responsive Umsetzung. Dadurch passt sich der dargestellte Inhalt an das Endgerät an, wodurch optimale Darstellung auch auf mobilen Geräten gewährleistet wird. Es können somit bereits neue Daten mobil erfasst werden.
+
+\begin{figure}[htb]
+	\includegraphics[width=\textwidth]{Bilder/Barrierefreidatenbank}
+	\caption{Barrierefreiheitsdatenbank}
+	\label{fig:system:Barrierefreidatenbank}
+\end{figure}
+
+\begin{figure}[htb]
+	\includegraphics[width=\textwidth]{Bilder/Datenerfassung}
+	\caption{Datenerfassung}
+	\label{fig:system:Datenerfassung}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{tabular}{l r}
+		\includegraphics[width=0.49\textwidth]{Bilder/Barrierefreidatenbank-mobil}
+		&
+		\includegraphics[width=0.49\textwidth]{Bilder/Datenerfassung-mobil}
+	\end{tabular}
+	\caption{Barrierefreiheitsdatenbank mobil}
+\end{figure}
+
+Nach Betrachtung der Vor- und Nachteile der App Varianten und der bestehenden Website, schließe ich die Umsetzung einer reinen nativen App aus. Der Umsetzungsaufwand und die entstehenden Kosten wären unangemessen hoch im Vergleich zu den daraus entstehenden Vorteilen.
