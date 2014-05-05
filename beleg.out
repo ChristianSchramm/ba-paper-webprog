@@ -18,10 +18,10 @@
 \BOOKMARK [2][]{section*.16}{2.3.2 Nachteile}{section*.14}% 18
 \BOOKMARK [1][]{section*.17}{2.4 Wahl der Appvariante}{chapter.2}% 19
 \BOOKMARK [0][]{chapter.3}{3 Synchronisation}{}% 20
-\BOOKMARK [1][]{section*.22}{3.1 WebSqlSync}{chapter.3}% 21
-\BOOKMARK [2][]{section*.23}{3.1.1 Installation und Initialisierung}{section*.22}% 22
-\BOOKMARK [1][]{section*.24}{3.2 persistence.js}{chapter.3}% 23
-\BOOKMARK [1][]{section*.25}{3.3 QuickConnectFamily DBSync}{chapter.3}% 24
+\BOOKMARK [1][]{section*.22}{3.1 Datenbanksynchronisation}{chapter.3}% 21
+\BOOKMARK [2][]{section*.23}{3.1.1 WebSqlSync}{section*.22}% 22
+\BOOKMARK [2][]{section*.24}{3.1.2 persistence.js}{section*.22}% 23
+\BOOKMARK [1][]{section*.25}{3.2 Assetsynchronisation}{chapter.3}% 24
 \BOOKMARK [0][]{chapter.4}{4 Fazit}{}% 25
 \BOOKMARK [1][]{section*.27}{4.1 System Section 1}{chapter.4}% 26
 \BOOKMARK [1][]{section*.28}{4.2 System Section 2}{chapter.4}% 27

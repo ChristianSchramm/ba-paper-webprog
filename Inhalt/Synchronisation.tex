@@ -9,8 +9,10 @@ Synchronisation beschreibt den Datenaustausch zwischen einem Sender und einem Em
 
 Besitzen beide Endgeräte dieselben Daten, z.B. in unterschiedlichen Versionen, kann definiert werden, wie mit den Änderungen umgegangen wird.\cite[]{WEB:SYNCML:2014}
 
-\section{WebSqlSync}
-\label{sec:websqlsync}
+Durch die Begrenzung des lokalen Gerätespeichers würde ich die Synchronisation auf 2 seperaten Wegen durchführen. Im ersten Teil die Datenbank und als Zweites alle Anhänge, wie z.B. Bilder oder Dokumente. So kann das Problem der Speicherbegrenzung bei Webapps umgangen werden.
+
+\section{Datenbanksynchronisation mit WebSqlSync}
+\label{sec:dbsync}
 
 WebSqlSync ist eine Javascript Bibliothek zur automatischen Synchronisation einer lokalen WebSql Datenbank mit dem Server. Die Synchronisation kann dabei in beide Richtungen erfolgen und arbeitet auf dem Prinzip der inkrementellen Synchronisation, was bedeutet dass nur erforderliche Daten übertragen werden.
 
@@ -20,18 +22,107 @@ Die Unterstützung von webapp und der phonegap app für mobile Betriebssysteme w
 
 \cleardoublepage
 
-\subsection{Installation und Initialisierung}
-\label{sec:installation}
+\textbf{Installation und Initialisierung}
 
 Um WebSqlSync nutzen zu können, muss nur die Datei webSqlSync.js im \ac{HTML} des Projekts hinzugefügt werden.
 
 \lstset{language=html}
 \lstinline$<script src="lib/webSqlSync.js" type="application/x-javascript" charset="utf-8"></script>$
 
+Wird die Bibliothek aufgerufen, werden automatisch 2 Datenbanktabellen erstellt, falls diese nicht bereits von einem vorherigen Aufruf existieren. Die erste Tabelle \textbf{\lstinline$new_elem$} speichert alle neuen bzw. geänderten Elemente und die zweite Tabelle \textbf{\lstinline$sync_info$} das Datum der letzten Synchronisation.
+
+Zusätzlich werden sogenannte SQLite Auslöser erstellt, die überwachen ob Änderungen per \textbf{\lstinline$INSERT$} oder \textbf{\lstinline$UPDATE$} an den Tabellen vorgenommen wird. SQLite ist eine einfache Datenbankbibliothek die Befehle der Sprache \ac{SQL} verwendet.
+
+Geänderte Elemente werden somit automatisch in der Tabelle \textbf{\lstinline$new_elem$} eingefügt.
+
+\lstset{language=html}
+\begin{lstlisting}
+DBSYNC.initSync(
+	TABLES_TO_SYNC, webSqlDb, sync_info,
+	'http://www.myserver.com', callBackEndInit
+);
+\end{lstlisting}
+
+Die Tabellen die man mit dem Server synchronisieren möchte, werden in der Funktion \textbf{\lstinline$TABLES_TO_SYNC$} angegeben.
+
+\lstset{language=html}
+\begin{lstlisting}
+TABLES_TO_SYNC = [
+  {tableName : 'table1', idName : 'the_id'},
+  {tableName : 'table2'}
+  //if idName not specified, it will assume that it's "id"
+];
+\end{lstlisting}
+
+In der Tabelle \textbf{\lstinline$sync_info$} können alle Informationen gespeichert werden, die der Entwickler als nützlich empfindet. Die Identifikation des Clients wäre eine wichtige Eigenschaft, da Sie mit an den Server gesendet wird. Dafür kann jegliche Information genutzt werden, wie z.B. die Emailadresse, ein Login oder auch eine entsprechende \ac{ID} des genutzten mobilen Endgeräts.
+
+\cleardoublepage
+
+\textbf{Aufruf}
+
+Um die Synchronisation zu starten ruft man die Funktion \textbf{\lstinline$syncNow$} auf. Die Synchronisation kann dabei nach einer freiwählbaren Zeitspanne, oder aber nach einer festgelegten Anzahl von Datenänderungen erfolgen.
+
+\lstset{language=html}
+\begin{lstlisting}
+DBSYNC.syncNow(callBackSyncProgress, function(result) {
+  if (result.syncOK === true) {
+    //Synchronized successfully
+  }
+});
+\end{lstlisting}
+
+Bei größeren Datenmengen ist es für den Nutzer hilfreich, wenn man eine Fortschrittsanzeige bekommt. Während der Synchronisation wird dafür bei jedem Einzelschritt die Funktion \textbf{\lstinline$callBackSyncProgress$} aufgerufen.
+
+\lstset{language=html}
+\begin{lstlisting}
+callBackSyncProgress: function(message, percent, msgKey) {
+  $('#uiProgress').html(message+' ('+percent+'%)');
+},
+\end{lstlisting}
+
+\textbf{Einschränkungen}
+
+Die Bibliothek WebSqlSync hat auch ein paar wenige Einschränkungen. Z.B. wird der \ac{SQL}-Befehl \textbf{\lstinline$DELETE$} nicht unterstützt. Stattdessen sollte das mit einem update an der entsprechenden Stelle umgangen werden.
+
+% Persistence.js
+
+% \subsection{persistence.js}
+% \label{subsec:persistence}
+
+% Dabei handelt es sich um eine Javascript Bibliothek die auf das Prinzip der asynchronen Programmierung baut. Das bedeutet es kann zeitgleich immer nur eine Aufgabe erledigt werden. Das verhindert z.B. bei der Datenbanksynchronisation das Einfrieren des Browsers, von der Anfrage am Server bis zum Ergebnis.
+
+% Sie basiert auf der serverseitigen Plattform node.js und unterstützt dabei vier Datenbanksysteme. Das sind die \ac{HTML5} WebSQL database, Google Gears, \ac{MySQL} welches auf node-mysql auf dem Server setzt, und eine temporäre Speichervariante als Fallback. Diese wird solange genutzt, bis die Seite neu geladen oder alles im lokalen Speicher abgelegt wird.
+
+% Persistence.js ist von anderen Frameworks komplett unabhängig und verfügt über einige zusätzliche Plugins, die den Funktionsaufwand erweitern. Dazu zählt z.B. die Integration von \ac{jQuery} mittels jquery.persistence.js oder auch eine Volltextsuche durch persistence.search.js.
+
+% Unterstützt werden bis auf den Internet Explorer alle modernen Webbrowser, wobei man bei Firefox auf Google Gears setzt.\cite[]{WEB:PERSISTENCE:2014}
+
+% \textbf{Installation am Bsp von \ac{SQL}}
+
+% Neben der Bibliothek persistence.js werden zusätzlich die Komponenten für Datenspeicherung benötigt. In diesem Beispiel persistence.store.sql.js und persistence.store.websql.js
+
+% \lstset{language=html}
+% \begin{lstlisting}
+% <script src="js/persistence.js"></script>
+% <script src="js/persistence.store.sql.js"></script>
+% <script src="js/persistence.store.websql.js"></script>
+% \end{lstlisting}
+
+% Für die Synchronisation mit einem Server wird außerdem das Plugin persistence.sync.js auf Clientseite und persistence.sync.server.js auf Serverseite benötigt.
+
+% Wie die man die Datenspeicherung konfiguriert, hängt von der Datenbankplattform ab, die man verwendet. Bei WebSQL sieht das am Beispiel des Clients folgendermaßen aus.
+
+% \lstset{language=html}
+% \begin{lstlisting}
+% persistence.store.websql.config(
+% 	persistence, 'yourdbname', 'A database description', 5 * 1024 * 1024
+% );
+% \end{lstlisting}
+
+% Wichtig sind dabei \textbf{persistence}, das immer an erster Stelle stehen muss. Darauf folgen \textbf{yourdbname}, also der Name der eigenen Datenbank, dann eine kurze Beschreibung selbiger und am Ende die maximale Größe der Datenbank in Byte.
+
+\section{Assetsynchronisation mit ownCloud}
+\label{sec:assetsync}
 
 
-\section{persistence.js}
-\label{sec:persistence}
 
-\section{QuickConnectFamily DBSync}
-\label{sec:quickconnect}
