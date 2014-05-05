@@ -38,20 +38,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Synchronisation}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Datenbanksynchronisation}{11}{section*.22}
+\contentsline {section}{\numberline {3.1}Datenbanksynchronisation am Bsp. WebSqlSync}{11}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}WebSqlSync}{11}{section*.23}
+\contentsline {section}{\numberline {3.2}Assetsynchronisation am Bsp. ownCloud}{13}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}persistence.js}{13}{section*.24}
+\contentsline {chapter}{\numberline {4}Fazit}{16}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Assetsynchronisation}{14}{section*.25}
+\contentsline {section}{\numberline {4.1}System Section 1}{16}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Fazit}{15}{chapter.4}
+\contentsline {section}{\numberline {4.2}System Section 2}{16}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}System Section 1}{15}{section*.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}System Section 2}{15}{section*.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Ausblick}{15}{section*.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{16}{section*.31}
+\contentsline {section}{\numberline {4.3}Ausblick}{16}{section*.29}

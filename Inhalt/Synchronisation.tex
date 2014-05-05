@@ -84,45 +84,53 @@ callBackSyncProgress: function(message, percent, msgKey) {
 
 Die Bibliothek WebSqlSync hat auch ein paar wenige Einschränkungen. Z.B. wird der \ac{SQL}-Befehl \textbf{\lstinline$DELETE$} nicht unterstützt. Stattdessen sollte das mit einem update an der entsprechenden Stelle umgangen werden.
 
-% Persistence.js
+\section{Dateisynchronisation am Bsp. ownCloud}
+\label{sec:datasync}
 
-% \subsection{persistence.js}
-% \label{subsec:persistence}
+ownCloud ist eine Open Source Software für die Einrichtung einer unabhängigen Serverseitigen Datenspeicherlösung. Sogenannte Cloudspeicher gibt es mittlerweile sehr viele. Die wohl bekanntesten sind Dropbox, Google Drive und OneDrive. Sie ermöglichen einen einfachen Datenzugriff von überall auf der Welt. Dafür lädt man seine Dateien über eine Internetverbindung auf einen speziellen Datenserver. Leider hat das den großen Nachteil, dass man keine 100 prozentige Sicherheit hat, was mit den eigenen Daten passiert.
 
-% Dabei handelt es sich um eine Javascript Bibliothek die auf das Prinzip der asynchronen Programmierung baut. Das bedeutet es kann zeitgleich immer nur eine Aufgabe erledigt werden. Das verhindert z.B. bei der Datenbanksynchronisation das Einfrieren des Browsers, von der Anfrage am Server bis zum Ergebnis.
+Um das zu sicherzustellen bietet ownCloud eine Möglichkeit einen eigenen Cloudserver zu erstellen, auf dem man alles selbst konfigurieren kann. Per Nutzer- und Rechteverwaltung lässt sich wie auf einem normalen Server festlegen, wer was machen kann. 
 
-% Sie basiert auf der serverseitigen Plattform node.js und unterstützt dabei vier Datenbanksysteme. Das sind die \ac{HTML5} WebSQL database, Google Gears, \ac{MySQL} welches auf node-mysql auf dem Server setzt, und eine temporäre Speichervariante als Fallback. Diese wird solange genutzt, bis die Seite neu geladen oder alles im lokalen Speicher abgelegt wird.
+Dazu werden Backup Lösungen angeboten, so dass jederzeit Sicherungen der Dateien angelegt werden können. Der wohl wichtigste Punkt ist aber die Verschlüsselung der gespeicherten Daten mittels \ac{SSL}, somit können auch unternehmensrelevante Daten gespeichert werden.
 
-% Persistence.js ist von anderen Frameworks komplett unabhängig und verfügt über einige zusätzliche Plugins, die den Funktionsaufwand erweitern. Dazu zählt z.B. die Integration von \ac{jQuery} mittels jquery.persistence.js oder auch eine Volltextsuche durch persistence.search.js.
+Durch die Open Source Lösung, lässt sich zu den bereits vorhandenen Plugins, neue Software entwickeln und den eigenen Bedürfnissen anpassen. Da bereits Apps für die mobilen Betriebssystem zu Verfügung stehen, lassen sich relativ einfach Daten zwischen dem Server und dem Client synchronisieren.
 
-% Unterstützt werden bis auf den Internet Explorer alle modernen Webbrowser, wobei man bei Firefox auf Google Gears setzt.\cite[]{WEB:PERSISTENCE:2014}
+Neben der frei verfügbaren ``Community Edition'' stehen für die volle Unterstützung der ownCloud Entwickler auch eine ``Business'' und eine ``Enterprise Version'' zur Verfügung, welche gegen eine jährliche Gebühr angeboten wird.\cite[]{WEB:OWNCLOUD:2014}
 
-% \textbf{Installation am Bsp von \ac{SQL}}
+\hspace{2 cm}
 
-% Neben der Bibliothek persistence.js werden zusätzlich die Komponenten für Datenspeicherung benötigt. In diesem Beispiel persistence.store.sql.js und persistence.store.websql.js
+\begin{figure}[htb]
+	\includegraphics[width=\textwidth]{Bilder/architecture}
+	\caption{Architektur ownCloud}
+	\label{Datenerfassung}
+\end{figure}
 
-% \lstset{language=html}
-% \begin{lstlisting}
-% <script src="js/persistence.js"></script>
-% <script src="js/persistence.store.sql.js"></script>
-% <script src="js/persistence.store.websql.js"></script>
-% \end{lstlisting}
+\hspace{2 cm}
 
-% Für die Synchronisation mit einem Server wird außerdem das Plugin persistence.sync.js auf Clientseite und persistence.sync.server.js auf Serverseite benötigt.
-
-% Wie die man die Datenspeicherung konfiguriert, hängt von der Datenbankplattform ab, die man verwendet. Bei WebSQL sieht das am Beispiel des Clients folgendermaßen aus.
-
-% \lstset{language=html}
-% \begin{lstlisting}
-% persistence.store.websql.config(
-% 	persistence, 'yourdbname', 'A database description', 5 * 1024 * 1024
-% );
-% \end{lstlisting}
-
-% Wichtig sind dabei \textbf{persistence}, das immer an erster Stelle stehen muss. Darauf folgen \textbf{yourdbname}, also der Name der eigenen Datenbank, dann eine kurze Beschreibung selbiger und am Ende die maximale Größe der Datenbank in Byte.
-
-\section{Assetsynchronisation am Bsp. ownCloud}
-\label{sec:assetsync}
+\textbf{Vorteile Android/iOS App}
 
 
+\begin{itemize}
+
+	\item SSL- und HTTP-Verbindungen werden automatisch erkannt, so dass eine einfache und gesicherte Verbindung zu dem Server möglich wird.\cite[]{WEB:OWNCLOUD:2014}
+
+	\item Dateien und Ordner auf dem Server können neu angelegt, durchsucht, umbenannt und gelöscht werden, je nachdem wie die Rechte an den Nutzer vergeben sind.\cite[]{WEB:OWNCLOUD:2014}
+
+	\item Durch das Anlegen von Favoriten lassen sich Daten wie Dokumente, Bilder und Videos automatisch mit dem Server synchronisieren.\cite[]{WEB:OWNCLOUD:2014}
+
+\end{itemize}
+
+\hspace{2 cm}
+
+\begin{figure}[htb]
+	\begin{tabular}{l r}
+		\includegraphics[width=0.49\textwidth]{Bilder/ownCloud-mobile1}
+		&
+		\includegraphics[width=0.49\textwidth]{Bilder/ownCloud-mobile2}
+	\end{tabular}
+	\caption{ownCloud App}
+	\label{Websitemobil}
+\end{figure}
+
+\cleardoublepage
 
