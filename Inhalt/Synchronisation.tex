@@ -11,7 +11,7 @@ Besitzen beide Endgeräte dieselben Daten, z.B. in unterschiedlichen Versionen, 
 
 Durch die Begrenzung des lokalen Gerätespeichers würde ich die Synchronisation auf 2 seperaten Wegen durchführen. Im ersten Teil die Datenbank und als Zweites alle Anhänge, wie z.B. Bilder oder Dokumente. So kann das Problem der Speicherbegrenzung bei Webapps umgangen werden.
 
-\section{Datenbanksynchronisation mit WebSqlSync}
+\section{Datenbanksynchronisation am Bsp. WebSqlSync}
 \label{sec:dbsync}
 
 WebSqlSync ist eine Javascript Bibliothek zur automatischen Synchronisation einer lokalen WebSql Datenbank mit dem Server. Die Synchronisation kann dabei in beide Richtungen erfolgen und arbeitet auf dem Prinzip der inkrementellen Synchronisation, was bedeutet dass nur erforderliche Daten übertragen werden.
@@ -121,7 +121,7 @@ Die Bibliothek WebSqlSync hat auch ein paar wenige Einschränkungen. Z.B. wird d
 
 % Wichtig sind dabei \textbf{persistence}, das immer an erster Stelle stehen muss. Darauf folgen \textbf{yourdbname}, also der Name der eigenen Datenbank, dann eine kurze Beschreibung selbiger und am Ende die maximale Größe der Datenbank in Byte.
 
-\section{Assetsynchronisation mit ownCloud}
+\section{Assetsynchronisation am Bsp. ownCloud}
 \label{sec:assetsync}
 
 
