@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Datenbanksynchronisation am Bsp. WebSqlSync}{11}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Assetsynchronisation am Bsp. ownCloud}{13}{section*.23}
+\contentsline {section}{\numberline {3.2}Dateisynchronisation am Bsp. ownCloud}{13}{section*.23}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Fazit}{16}{chapter.4}
 \defcounter {refsection}{0}\relax 
