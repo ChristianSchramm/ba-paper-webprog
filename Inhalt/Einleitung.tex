@@ -3,40 +3,40 @@
 \chapter{Einleitung}
 \label{sec:Einleitung}
 
-\cleanchapterquote{There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.}{C.A.R. Hoare}{(British computer scientist, winner of the 1980 Turing Award)}
+\cleanchapterquote{There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.}{C.A.R. Hoare}{(British computer scientist,\\winner of the 1980 Turing Award)}
 
-Das Thema Barrierefreiheit betrifft einen jährlich zunehmenden größer werdenden Teil der Bevölkerung. Im Jahr 2011 gab es mit knapp 7,3 Millionen schwerbehinderten Menschen rund 2,6\% mehr als noch im Jahr 2009.\cite[]{WEB:DESTATIS:2014} Dabei leiden zweidrittel der schwerbehinderten Menschen unter körperlichen Behinderungen, welche je nach Grad und Art der Behinderung zu sehr starken Einschränkungen im Alltag führen können.
+Das Thema Barrierefreiheit betrifft einen jährlich zunehmend größer werdenden Teil der Bevölkerung. Im Jahr 2011 gab es mit knapp 7,3 Millionen schwerbehinderten Menschen rund 2,6 Prozent mehr als noch im Jahr 2009 \cite[]{WEB:DESTATIS:2014}. Dabei leiden zweidrittel der schwerbehinderten Menschen unter körperlichen Behinderungen, die je nach Art und Grad der Behinderung zu sehr starken Einschränkungen im Alltag führen können.
 
-Im Bereich des öffentlichen Lebens wird sehr viel dafür getan, um z.B. die Zugänge zu öffentlichen Einrichtungen wie Museen, Ämtern oder öffentlichen Verkehrsmitteln zu erleichtern. In der Verordnung DIN 18040 Barrierefreies Bauen sind grundlegende Anforderungen an öffentlich zugängliche Gebäude beschrieben. Die Einführung dieser Verordnung bzw. der einzelnen Punkte in die Technischen Baubestimmungen obliegt jedoch den einzelnen Bundesländern.\cite[]{WEB:DIN18040:2010}
+Im Bereich des öffentlichen Lebens wird sehr viel für die Aufhebunng der Einschränkungen, um z.B. die Zugänge zu öffentlichen Einrichtungen wie Museen, Ämtern oder öffentlichen Verkehrsmitteln zu erleichtern. In der Verordnung DIN 18040 \cite[]{WEB:DIN18040:2010} Barrierefreies Bauen sind grundlegende Anforderungen an öffentlich zugängliche Gebäude beschrieben. Die Einführung dieser Verordnung bzw. der einzelnen Punkte in die Technischen Baubestimmungen obliegt jedoch den einzelnen Bundesländern.
 
-Um erfassen zu können welche Einrichtungen die behindertengerechten Anforderungen erfüllen, wurde von der Thüringer Tourismus GmbH in Zusammenarbeit mit dem Dresdner Unternehmen webit! Gesellschaft für neue Medien mbH das Konzept der Barrierefreiheitsdatenbank entwickelt. Sie ermöglicht es alle Daten über eine Einrichtung zu erfassen. Dazu zählen z.B. Zugänge, Treppen, Liftanlagen und vieles mehr. Alle Daten die von Mitarbeitern des Unternehmens erfasst werden, kommen in einer Datenbank zusammen und sollen dabei helfen behinderten Menschen bei der Planung ihres Urlaubs oder von Ausflügen zu unterstützen.
+Um zu erfassen, welche Einrichtungen die behindertengerechten Anforderungen erfüllen, wurde von der Thüringer Tourismus GmbH in Zusammenarbeit mit dem Dresdner Unternehmen webit! Gesellschaft für neue Medien mbH das Konzept der Barrierefreiheitsdatenbank entwickelt. Sie ermöglicht es alle Daten über eine Einrichtung zu erfassen. Dazu zählen z.B. Zugänge, Treppen, Liftanlagen und vieles mehr. Alle Daten, die von Mitarbeitern des Unternehmens erfasst werden, kommen in einer Datenbank zusammen und sollen behinderten Menschen bei der Planung ihres Urlaubs oder Ausflügen helfen.
 
 \section{Motivation}
 \label{sec:motivation:mot}
 
-Die Überlegung zu dieser Arbeit kam durch die Erfassung der ersten öffentlich begehbaren Einrichtungen. Um zum derzeitigen Zeitpunkt Daten erfassen zu können, wird eine Internetverbindung benötigt. Diese kann aber bei vielen Einrichtungen, wie z.B. Kellergewölben, Museen oder Schlössern nicht gewährleistet werden. Dadurch entstand der Wunsch die Daten unabhängig von einer Internetverbindung einpflegen zu können. Die aufgenommenen Bilder und Informationen zu den baulichen Gegebenheiten sollen dann mit den vorhandenen Daten auf dem Server abgeglichen werden und gegebenenfalls auf dem Client, als auch auf dem Server ergänzt werden.
+Die Idee dieser Arbeit entwickelte sich bei der Erfassung der ersten öffentlich begehbaren Einrichtungen. Um Daten erfassen zu können, wird eine Internetverbindung benötigt. Diese kann aber bei vielen Einrichtungen, wie z.B. Kellergewölben, Museen oder Schlössern nicht gewährleistet werden. Die baulichen Gegebenheiten verhindern häufig eine stabile Funkverbindung zwischen dem mobilen Endgerät und dem Server. Daher entstand der Wunsch die Daten unabhängig von einer Internetverbindung einpflegen zu können. Die aufgenommenen Bilder und Informationen zu den baulichen Gegebenheiten sollen dann mit den vorhandenen Daten auf dem Server abgeglichen und sowohl auf dem Client, als auch auf dem Server ergänzt werden.
 
 \section{Zielstellung und Abgrenzung der Arbeit}
 \label{sec:goal:goal}
 
-Smartphones und Tablets gehören mittlerweile zum Standard der mobilen Kommunikation. Mit diesen kleinen \"Alleskönnern\" kann man Fotos aufnehmen, im Internet surfen, Dokumente erfassen und vieles mehr, was noch vor ein paar Jahren nur von Desktoprechnern denkbar gewesen wäre. Das macht die heutige Datenerfassung sehr viel flexibler als noch vor ein paar Jahren.
+Smartphones und Tablets gehören mittlerweile zum Standard der mobilen Kommunikation. Mit diesen kleinen ``Alleskönnern'' kann man Fotos aufnehmen, im Internet surfen, Dokumente erfassen und vieles mehr, was noch vor ein paar Jahren nur von Desktoprechnern aus möglich war. Das macht die heutige Datenerfassung sehr viel flexibler als noch vor ein paar Jahren.
 
-Ziel der Arbeit ist es eine Möglichkeit zu finden, Daten die mit mobilen Endgeräten erfasst werden mit den Daten auf einem Server zu synchronisieren.  Dabei soll sowohl die Datenbank betrachtet werden, als auch Bilddateien. Als Ausgangspunkt dienen die Vor- und Nachteile die es bei nativen Apps, Web Apps und einer Hybrid App Variante gibt und wie sich das auf eine Synchronisation der Daten auswirkt.
+Ziel der Arbeit ist es eine Möglichkeit zu finden, die mit mobilen Endgeräten erfassen Daten mit den Daten auf einem Server zu synchronisieren. Dabei soll sowohl die Datenbank, als auch Bilddateien betrachtet werden. Als Ausgangspunkt dienen die Vor- und Nachteile, die es bei nativen Apps, Web Apps und einer Hybrid App Variante gibt und wie sich daraus entstehenden Einschränkungen auf eine Synchronisation der Daten auswirken.
 
-In dieser Arbeit wird keine native App und auch keine Webapp programmiert, sondern nur Überlegungen zur Umsetzung einer erfolgreichen Synchronisation getroffen, die dann eine Entscheidung über die Wahl der mobilen Variante der Barrierefreiheitsdatenbank beeinflussen könnte.
+In dieser Arbeit liegt der Fokus nicht auf der Programmierung einer nativen App oder Web App. Stattdessen werden Überlegungen zur Umsetzung einer erfolgreichen Synchronisation der Daten angestellt, welche die Wahl einer mobilen Variante der Barrierefreiheitsdatenbank beeinflussen können.
 
 \section{Untersuchungsgegenstand}
 \label{sec:investigation:inv}
 
-Um die nachfolgende Forschungsfrage wiederlegen oder bestätigen zu können, werde ich mir unterschiedliche Methoden der Datensynchronisation anschauen und die Vor- und Nachteile miteinander vergleichen und für das Kundenprojekt einen Lösungsansatz zu finden.
+Im folgenden Abschnitt werden unterschiedliche Methoden der Datensynchronisation betrachtet und die Vor- und Nachteile miteinander verglichen, um für das Kundenprojekt einen Lösungsansatz zu finden. Die Ergebnisse sollen dabei helfen, die nachfolgende Forschungsfrage zu widerlegen oder zu bestätigen.
 
 \subsection{Forschungsfrage}
 \label{subsec:problem:prob}
 
-Nach Betrachtung der Zielstellung ergab sich eine Forschungsfrage, die am Ende der Arbeit beantwortet werden soll.
+Aus der Zielstellung ergibt sich eine Forschungsfrage, die mit Hilfe der zu erarbeitenden Ergebnisse am Ende dieser Arbeit beantwortet wird.
 
 \begin{quote}
-	\textbf {Gibt es eine Möglichkeit alle Daten die mit mobilen Endgeräten offline erfasst werden, bei bestehender Internetverbindung mit dem Server abzugleichen?}
+	\textbf {Gibt es eine Möglichkeit alle Daten, die mit mobilen Endgeräten offline erfasst werden, bei bestehender Internetverbindung mit dem Server abzugleichen?}
 \end{quote}
 
 \cleardoublepage
@@ -44,7 +44,7 @@ Nach Betrachtung der Zielstellung ergab sich eine Forschungsfrage, die am Ende d
 \subsection{Hypothesen}
 \label{subsec:hypothesis:hypo}
 
-Daraus ergaben sich folgende Hypothesen, welche sich bei der Untersuchung der Methoden als richtig oder falsch herausstellten.
+Daraus ergeben sich folgende Hypothesen, die sich bei der Untersuchung der Methoden der Datenbank- und Dateisynchronisation von mobilen Endgeräten mit einem Server als richtig oder falsch herausstellen werden.
 
 \textbf {1. Hypothese}
 

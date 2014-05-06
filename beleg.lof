@@ -6,16 +6,24 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Barrierefreiheitsdatenbank\relax }}{8}{figure.caption.18}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Die Abbildung zeigt den Aufbau der Website http://www.thueringen-tourismus.de/barrierefrei auf der Daten f\IeC {\"u}r die Barrierefreiheitsdatenbanke eingepflegt und abgerufen werden k\IeC {\"o}nnen.\relax }}{8}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Datenerfassung\relax }}{8}{figure.caption.19}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces In der Abbildung ist ein Standardformular zu sehen, welches grundlegende Eigenschaften f\IeC {\"u}r die Datenerfassung einer Einrichtung erh\IeC {\"a}lt. Wie beispielsweise die Art der Einrichtung.\relax }}{8}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Barrierefreiheitsdatenbank mobil\relax }}{9}{figure.caption.20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Auf den beiden oberen Bilder ist sowohl die Ausgabe der erfassten Daten, als auch die Seite zur Datenerfassung auf einem mobilen Endger\IeC {\"a}t zu sehen. Navigation und Inhaltselemente passen sich an die Aufl\IeC {\"o}sung des Endger\IeC {\"a}ts an.\relax }}{9}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Architektur ownCloud\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Codebeispiel f\IeC {\"u}r den Aufruf zur Datenbanksynchronisation\relax }}{12}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces ownCloud App\relax }}{15}{figure.caption.25}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Codebeispiel f\IeC {\"u}r die Datenbanktabellen die synchronisiert werden sollen\relax }}{12}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Codebeispiel f\IeC {\"u}r den Aufruf zur Synchronisation\relax }}{13}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Codebeispiel f\IeC {\"u}r den Callback zur Erstellung einer Fortschrittsanzeige\relax }}{13}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Architektur ownCloud\relax }}{14}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces ownCloud App\relax }}{15}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

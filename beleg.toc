@@ -18,19 +18,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Native Apps}{4}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Vorteile}{4}{section*.9}
+\contentsline {subsection}{\numberline {2.1.1}Vorteile}{5}{section*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Nachteile}{5}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Webapps}{5}{section*.11}
+\contentsline {section}{\numberline {2.2}Web Apps}{5}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Vorteile}{5}{section*.12}
+\contentsline {subsection}{\numberline {2.2.1}Vorteile}{6}{section*.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Nachteile}{6}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Hybridapps}{6}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Vorteile}{6}{section*.15}
+\contentsline {subsection}{\numberline {2.3.1}Vorteile}{7}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Nachteile}{7}{section*.16}
 \defcounter {refsection}{0}\relax 
@@ -38,12 +38,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Synchronisation}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Datenbanksynchronisation am Bsp. WebSqlSync}{11}{section*.22}
+\contentsline {section}{\numberline {3.1}Datenbanksynchronisation am Beispiel ``WebSqlSync''}{11}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Dateisynchronisation am Bsp. ownCloud}{13}{section*.23}
+\contentsline {section}{\numberline {3.2}Dateisynchronisation am Beispiel ``ownCloud''}{13}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Fazit}{16}{chapter.4}
+\contentsline {chapter}{\numberline {4}Fazit}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Auswertung}{16}{section*.27}
+\contentsline {section}{\numberline {4.1}Auswertung}{17}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Ausblick}{17}{section*.28}
+\contentsline {section}{\numberline {4.2}Ausblick}{18}{section*.32}
