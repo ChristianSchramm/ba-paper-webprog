@@ -3,19 +3,26 @@
 \chapter{Fazit}
 \label{sec:Fazit}
 
-% \Blindtext[2][1]
+Zu Beginn der vorliegenden Arbeit wurden die zur Verfügung stehenden Varianten der Umsetzung der Barrierefreiheitsdatenbank auf mobilen Endgeräten betrachtet, da sich diese stark auf die Möglichkeiten der Datenspeicherung und der Synchronisation auswirken. Auch die bereits bestehende Website wurde für die Wahl der besten Variante herrangezogen und beeinflusste maßgeblich die Wahl der Synchronisation.
 
-\section{System Section 1}
-\label{sec:Fazit:sec1}
+Eine kurze Erläuterung der Funktionen der beiden Lösungsansätze sollte vermitteln, wie man diese für die Barrierefreiheitsdatenbank einsetzen kann und welche Kombinationsmöglichkeiten es gibt.
 
-% \Blindtext[2][2]
+Die Programmbibliothek WebSqlSync für die Datenbanksynchronisation und die Dateispeicherlösung ownCloud sind nur 2 Beispiele, wie man die Synchronisation zwischen einem mobilen Endgerät und einem Server gewährleisten könnte. Mit der Umsetzung einer Web App und der Möglichkeit diese mit Hilfe eines zusätzlichen Javascript-Frameworks in eine Hybrid App umwandeln zu können, lassen sich beide Lösungen mit etwas mehr Aufwand wahrscheinlich sogar zu einer Anwendung zusammenführen.
 
-\section{System Section 2}
-\label{sec:Fazit:sec2}
+\section{Auswertung}
+\label{sec:Fazit:Auswertung}
 
-% \Blindtext[3][2]
+Nach Betrachtung der beiden Beispiele lässt sich sagen, dass Hypothese eins und drei sich als wahr herausgestellt haben. Durch die Trennung von Datenbanksynchronisation und Dateisynchronisation lassen sich die Beschränkungen die bei einer Web App an den lokalen Speicher der mobilen Endgeräte bestehen umgehen. Eine Web App bietet sich als Plattform für die mobilen Geräte an, da sie auf das bereits bestehende Grundgerüst der Barrierefreiheitsdatenbank aufbaut. Gleichzeitig lässt sich so viel Aufwand sparen und dadurch die anfallenden Umsetzungskosten verringern, ganz im Gegensatz zu der Entwicklung einer nativen App.
+
+Beide Lösungen bieten die Möglichkeit auch ohne Internetzugang weiter Daten einpflegen zu können und erst bei bestehender Internetverbindung die Daten zu synchronisieren. Auch bei einem erneuten Verbindungsabbruch bleiben die Daten erhalten und werden später einfach erneut synchronisiert.
+
+Hypothese zwei hat sich nach der Betrachtung als weniger optimale Lösung herausgestellt. Der Aufwand und die Kosten stehen in keinem Verhältnis zum Vorteil des erhöhten Speichergewinns und der Kombination aus Datei- und Datenbankspeichers.
 
 \section{Ausblick}
 \label{sec:Fazit:Ausblick}
 
-% \Blindtext[2][2]
+Im Ausblick auf die Weiterentwicklung der Barrierefreiheitsdatenbank und einer im größer werdenden Zielgruppe, bietet der Ansatz der getrennten Synchronisationswege einige Vorteile. Es lassen sich beliebig Nutzer ergänzen, die neue Daten einpflegen können.
+
+Eine Weiterentwicklung des Lösungsansatzer könnte dann die Umwandlung der Web App in eine Hybrid App sein. Dadurch ergibt sich die Möglichkeit die Cloudfunktionen und die Datenbanksynchronisation in einer App zusammenzuführen und zusätzlich Hardwarefunktionen wie z.B. die Kamera zu integrieren. Auch der erweiterte Speicher wäre auf lange Sicht und die damit in Verbindung stehende Projektkomplexität von Vorteil.
+
+Der nächste Schritt wäre eine Prototyp Anwendung zu erstellen und die Funktionen am praktischen Beispiel zu testen.

@@ -89,7 +89,7 @@ Die Bibliothek WebSqlSync hat auch ein paar wenige Einschränkungen. Z.B. wird d
 
 ownCloud ist eine Open Source Software für die Einrichtung einer unabhängigen Serverseitigen Datenspeicherlösung. Sogenannte Cloudspeicher gibt es mittlerweile sehr viele. Die wohl bekanntesten sind Dropbox, Google Drive und OneDrive. Sie ermöglichen einen einfachen Datenzugriff von überall auf der Welt. Dafür lädt man seine Dateien über eine Internetverbindung auf einen speziellen Datenserver. Leider hat das den großen Nachteil, dass man keine 100 prozentige Sicherheit hat, was mit den eigenen Daten passiert.
 
-Um das zu sicherzustellen bietet ownCloud eine Möglichkeit einen eigenen Cloudserver zu erstellen, auf dem man alles selbst konfigurieren kann. Per Nutzer- und Rechteverwaltung lässt sich wie auf einem normalen Server festlegen, wer was machen kann. 
+Um das zu sicherzustellen bietet ownCloud eine Möglichkeit einen eigenen Cloudserver zu erstellen, auf dem man alles selbst konfigurieren kann. Per Nutzer- und Rechteverwaltung lässt sich wie auf einem normalen Server festlegen, wer was machen kann.
 
 Dazu werden Backup Lösungen angeboten, so dass jederzeit Sicherungen der Dateien angelegt werden können. Der wohl wichtigste Punkt ist aber die Verschlüsselung der gespeicherten Daten mittels \ac{SSL}, somit können auch unternehmensrelevante Daten gespeichert werden.
 
@@ -118,6 +118,10 @@ Neben der frei verfügbaren ``Community Edition'' stehen für die volle Unterst�
 
 	\item Durch das Anlegen von Favoriten lassen sich Daten wie Dokumente, Bilder und Videos automatisch mit dem Server synchronisieren.\cite[]{WEB:OWNCLOUD:2014}
 
+	\item Dateien können auf das mobile Endgerät heruntergeladen werden um diese Offline nutzen zu können.\cite[]{WEB:OWNCLOUD:2014}
+
+	\item Es werden durch die App mehrere ownCloud Accounts mit einem Device unterstützt und zusätzlich die Anbindung an mehrere ownCloud Server.\cite[]{WEB:OWNCLOUD:2014}
+
 \end{itemize}
 
 \hspace{2 cm}
@@ -132,5 +136,8 @@ Neben der frei verfügbaren ``Community Edition'' stehen für die volle Unterst�
 	\label{Websitemobil}
 \end{figure}
 
-\cleardoublepage
+\hspace{2 cm}
 
+Unabhängig von der Anzahl der Nutzer lassen sich mit dieser Cloudlösung die für die Datenbank aufgenommenen Bilder unkompliziert speichern. Egal ob ein Internetzugang zur Verfügung steht, oder man die Fotos offline aufnimmt und in einem Ordner von ownCloud ablegt, werden diese dann automatisch synchronisiert sobald eine Internetverbindung zur Verfügung steht.
+
+Einziger Nachteil ist dabei der Kostenfaktor für die ``Enterprise'' Lösung, den man mit dem Kunden abstimmen muss. In Ausblick auf die Erweiterbarkeit durch die Open Source \ac{API} lässt sich die Software beliebig erweitern und kann somit den Nutzen-Kosten-Faktor verringern.
