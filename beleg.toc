@@ -47,3 +47,5 @@
 \contentsline {section}{\numberline {4.1}Auswertung}{17}{section*.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick}{18}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Abk\IeC {\"u}rzungsverzeichnis}{21}{chapter.5}
